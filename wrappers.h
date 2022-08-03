@@ -16,9 +16,6 @@ TG(2), KC_B, KC_B, KC_Q
 #define MKD \
 TG(3), KC_M, KC_K, KC_D
 
-#define LAYOUT_wrapper_ortho_1x4(...) LAYOUT_ortho_1x4(__VA_ARGS__)
-
-
 // QWERTY
 #define BASE \
 KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
