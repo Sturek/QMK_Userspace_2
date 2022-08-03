@@ -1,0 +1,15 @@
+{
+    "author": "",
+    "documentation": "Wrapper based keymap",
+    "keyboard": "40percentclub/4pack",
+    "keymap": "Sturek",
+    "layers": [
+        [ "LAYER" ],
+        [ "WTF" ],
+        [ "BBQ" ],
+        [ "MKD" ]
+    ],
+    "layout": "LAYOUT_wrapper_macro_1x4",
+    "notes": "",
+    "version": 1
+}
