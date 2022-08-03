@@ -1,6 +1,5 @@
 #pragma once
 
-#define LAYOUT_wrapper_ortho_4x12(...) LAYOUT_ortho_4x12(__VA_ARGS__)
 
 // QWERTY
 #define BASE \
@@ -30,7 +29,7 @@ _______, KC_F11,  KC_F12,  _______, _______, _______, KC_HOME, KC_PGDN, KC_PGUP,
 _______, _______, _______, _______, _______, _______, _______, KC_INS,  KC_DEL,  _______, _______, _______, \
 _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______ 
 
-#define LAYOUT_wrapper_macro_1x4(...) LAYOUT_macro_1x4(__VA_ARGS__)
+#define LAYOUT_wrapper_ortho_4x12(...) LAYOUT_ortho_4x12(__VA_ARGS__)
 
 // QWERTY
 #define LAYER \
@@ -47,3 +46,5 @@ TG(2), KC_B, KC_B, KC_Q
 // Adjust
 #define MKD \
 TG(3), KC_M, KC_K, KC_D
+
+#define LAYOUT_wrapper_macro_1x4(...) LAYOUT_all(__VA_ARGS__)
