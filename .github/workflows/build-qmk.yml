@@ -11,6 +11,7 @@ jobs:
 # List of keymap json files to build
         file:
         - niu_mini.json
+        - 4pack.json
 # End of json file list
 
     steps:
