@@ -1,22 +1,6 @@
 #pragma once
 
 // QWERTY
-#define LAYER \
-TG(1),  TG(2),    TG(3),    TG(4)
-
-// Lower
-#define WTF \
-TG(1), KC_W, KC_T, KC_F
-
-// Raise
-#define BBQ \
-TG(2), KC_B, KC_B, KC_Q
-
-// Adjust
-#define MKD \
-TG(3), KC_M, KC_K, KC_D
-
-// QWERTY
 #define BASE \
 KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
 KC_GESC, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
