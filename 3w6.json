@@ -1,0 +1,16 @@
+{
+    "author": "",
+    "documentation": "Wrapper based keymap",
+    "keyboard": "3w6/rev2",
+    "keymap": "Sturek",
+    "layers": [
+        [ "WRITE" ],
+        [ "COUNT" ],
+        [ "SIGN" ],
+        [ "MOVE" ],
+        [ "SCHREIB" ]
+    ],
+    "layout": "LAYOUT_wrapper_split_3x6_3",
+    "notes": "",
+    "version": 1
+}

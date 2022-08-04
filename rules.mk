@@ -18,3 +18,13 @@ ifeq ($(strip $(KEYBOARD)), crkbd/rev1/common)
     MOUSEKEY_ENABLE = yes
     OLED_DRIVER_ENABLE = yes
 endif
+
+# Features for 3w6
+ifeq ($(strip $(KEYBOARD)), 3w6/rev2)
+    POINTING_DEVICE_ENABLE = yes
+    POINTING_DEVICE_DRIVER = pimoroni_trackball
+    SRC += pimoroni_trackball.c
+    MOUSEKEY_ENABLE = yes
+    MACROS_ENABLED = yes
+    COMBO_ENABLE = yes
+endif
