@@ -121,4 +121,4 @@ _______, _______, _______, _______, _______, _______, _______, _______, _______,
 
 
 // Layout aliases
-#define LAYOUT_corne_w(...) LAYOUT_split_3x6_3(__VA_ARGS__)
+#define LAYOUT_36key_w(...) LAYOUT_split_3x6_3(__VA_ARGS__)
