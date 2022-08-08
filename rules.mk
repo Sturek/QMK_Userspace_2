@@ -27,4 +27,5 @@ ifeq ($(strip $(KEYBOARD)), 3w6/rev2)
     MOUSEKEY_ENABLE = yes
     MACROS_ENABLED = yes
     COMBO_ENABLE = yes
+    SRC += combos.c
 endif
