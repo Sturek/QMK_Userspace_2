@@ -72,4 +72,4 @@ RALT(KC_Q), _______, RALT(KC_S), _______,    _______,   _______, KC_BTN1,    ___
 _______,    _______, _______, _______,    _______,   _______, KC_BTN2,    _______,    _______,    _______, \
                TG(4), LT(3,KC_DEL), LT(1,KC_ENTER),   LT(2,KC_SPACE),   KC_BACKSPACE, _______
 
-// #define LAYOUT_36key_w(...) LAYOUT(__VA_ARGS__)
+#define LAYOUT_36key_w(...) LAYOUT(__VA_ARGS__)
