@@ -10,7 +10,7 @@
         [ "MOVE" ],
         [ "SCHREIB" ]
     ],
-    "layout": "LAYOUT_split_3x6_3",
+    "layout": "LAYOUT",
     "notes": "",
     "version": 1
 }
