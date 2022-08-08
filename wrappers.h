@@ -43,82 +43,33 @@ _______, _______, _______, _______, _______, _______, _______, _______, _______,
 #define LAYOUT_wrapper_ortho_4x12(...) LAYOUT_ortho_4x12(__VA_ARGS__)
 
 #define WRITE \
-	KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,        KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
-	QK_GESC, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,        KC_H,    KC_J,    KC_K,    KC_L,    KC_QUOT, KC_SCLN, \
-	OSM_SFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,        KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT,  \
-	        RSA_T(KC_ESC), LT(SYM,KC_TAB), LCA_T(KC_ENT),     RSFT_T(KC_SPC), LT(NUM,KC_BSPC), RAG_T(KC_DEL)
-/* ,-----------------------------------------.                ,-----------------------------------------.
-   | TAB  |  Q   |  W   |  E   |  R   |  T   |                |  Y   |  U   |  I   |  O   |  P   | BSPC |
-   |------+------+------+------+------+------|                |------+------+------+------+------+------|
-   | GESC |  A   |  S   |  D   |  F   |  G   |                |  H   |  J   |  K   |  L   | ' "  | ; :  |
-   |------+------+------+------+------+------|                |------+------+------+------+------+------|
-   |OS_SFT|  Z   |  X   |  C   |  V   |  B   |                |  N   |  M   | , <  | . >  | / ?  | ENT  |
-   `------+------+------+------+------+------+------.  ,------+------+------+------+------+------+------'
-                               |RSA_T |_SYMB |LCA_T |  |RSFT_T|_NUMB |RAG_T |
-                               | ESC  | TAB  | ENT  |  | SPC  | BSPC | DEL  |
-                               `--------------------'  `--------------------'
- */
+KC_Q,    RALT_T(KC_W),    KC_F,   KC_P,          KC_B,         KC_J,    KC_L,           KC_U,    RALT_T(KC_Y),    KC_SEMICOLON, \
+HOME_A,  HOME_R,          HOME_S, HOME_T,        LT(4,KC_G),   KC_M,    HOME_N,         HOME_E,  HOME_I,          HOME_O, \
+KC_Z,    LALT_T(KC_X),    KC_C,   KC_D,          KC_V,         KC_K,    KC_H,           KC_COMM, LALT_T(KC_DOT),  KC_SLASH, \
+                    LCTL(KC_C), LT(3,KC_DEL), LT(1,KC_ENTER),           LT(2,KC_SPACE),   KC_BACKSPACE, LCTL(KC_V)
+
 #define COUNT \
-	_______, KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,        KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT, _______, \
-	_______, KC_A,    KC_R,    KC_S,    KC_T,    KC_D,        KC_H,    KC_N,    KC_E,    KC_I,    KC_O,    _______, \
-	_______, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,        KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, _______, \
-	                           _______, _______, _______,     _______, _______, _______
-/* ,-----------------------------------------.                ,-----------------------------------------.
-   |      |  Q   |  W   |  F   |  P   |  G   |                |  J   |  L   |  U   |  Y   | ' "  |      |
-   |------+------+------+------+------+------|                |------+------+------+------+------+------|
-   |      |  A   |  R   |  S   |  T   |  D   |                |  H   |  N   |  E   |  I   |  O   |      |
-   |------+------+------+------+------+------|                |------+------+------+------+------+------|
-   |      |  Z   |  X   |  C   |  V   |  B   |                |  K   |  M   | , <  | . >  | / ?  |      |
-   `------+------+------+------+------+------+------.  ,------+------+------+------+------+------+------'
-                               |      |      |      |  |      |      |      |
-                               `--------------------'  `--------------------'
- */
+KC_1,               KC_2,          KC_3,            KC_4,             KC_5,        KC_6,     KC_7,             KC_8,                 KC_9,            KC_0, \
+KC_EXCLAIM, KC_AT, KC_HASH, KC_MINUS, LT(4,KC_PERCENT),  KC_EQUAL, KC_PLUS,  S(KC_8),  KC_BSLS, KC_DQT, \
+KC_TILDE,           KC_GRAVE,      KC_LBRC,         KC_LPRN,          KC_LCBR,     KC_RCBR,  KC_RPRN,          KC_RBRC,              KC_AMPERSAND,    KC_QUOTE, \
+                        TG(4), LT(3,KC_DEL), LT(1,KC_ENTER),   LT(2,KC_SPACE),   KC_BACKSPACE, _______
+
 #define SIGN \
-	_______, KC_INS,  KC_1,    KC_2,    KC_3,    KC_VOLU,     KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_COLN, _______, \
-	_______, KC_DEL,  KC_4,    KC_5,    KC_6,    KC_VOLD,     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_SCLN, _______, \
-	_______, KC_CAPS, KC_7,    KC_8,    KC_9,    KC_0,        _______, RSA_DN,  RSA_UP,  _______, _______, _______, \
-	                           _______, MO(FNC), QK_GESC,     _______, _______, _______
-/* ,-----------------------------------------.                ,-----------------------------------------.
-   |      | INS  |  1   |  2   |  3   | VOLU |                | HOME | PGDN | PGUP | END  |  :   |      |
-   |------+------+------+------+------+------|                |------+------+------+------+------+------|
-   |      | DEL  |  4   |  5   |  6   | VOLD |                | LEFT | DOWN |  UP  | RGHT |  ;   |      |
-   |------+------+------+------+------+------|                |------+------+------+------+------+------|
-   |      | CAPS |  7   |  8   |  9   |  0   |                |      |RSA_DN|RSA_UP|      |      |      |
-   `------+------+------+------+------+------+------.  ,------+------+------+------+------+------+------'
-                               |      |_FUNC | GESC |  |      |      |      |
-                               `--------------------'  `--------------------'
- */
+KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10, \
+RALT(KC_1), RALT(KC_2), RALT(KC_3), RALT(KC_7), RALT(KC_6), KC_DOLLAR, RALT(KC_5), KC_AMPERSAND,  S(KC_BSLS), SAGR(KC_6), \
+RALT(KC_8), SAGR(KC_EQUAL), SAGR(KC_4), SAGR(KC_LBRC), RALT(KC_LBRC), RALT(KC_RBRC), SAGR(KC_RBRC), RALT(KC_MINUS), _______, SAGR(KC_BSLS), \
+                              _______, LT(3,KC_DEL), LT(1,KC_ENTER),   LT(2,KC_SPACE),   KC_BACKSPACE, _______
+
 #define MOVE \
-	_______, _______, KC_LBRC, KC_LCBR, KC_RCBR, _______,     KC_CIRC, KC_LPRN, KC_RPRN, KC_RBRC, KC_TILD, _______, \
-	_______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,     KC_ASTR, KC_MINS, KC_EQL,  KC_BSLS, KC_GRV,  _______, \
-	_______, _______, _______, _______, _______, _______,     KC_AMPR, KC_UNDS, KC_PLUS, KC_PIPE, _______, _______, \
-	                           _______, _______, _______,     _______, MO(FNC), _______
-/* ,-----------------------------------------.                ,-----------------------------------------.
-   |      |      |  [   |  {   |  }   |      |                |  ^   |  (   |  )   |  ]   |  ~   |      |
-   |------+------+------+------+------+------|                |------+------+------+------+------+------|
-   |      |  !   |  @   |  #   |  $   |  %   |                |  *   |  -   |  =   |  \   |  `   |      |
-   |------+------+------+------+------+------|                |------+------+------+------+------+------|
-   |      |      |      |      |      |      |                |  &   |  _   |  +   |  |   |      |      |
-   `------+------+------+------+------+------+------.  ,------+------+------+------+------+------+------'
-                               |      |      |      |  |      |_FUNC |      |
-                               `--------------------'  `--------------------'
- */
+RGB_TOG,   KC_MPRV,    KC_UP,      KC_MNXT,    KC_VOLU,    RGB_VAD,     RGB_VAI,       _______,        KC_F11,     KC_F12, \
+RGB_MOD,   KC_LEFT,    KC_DOWN,    KC_RIGHT,   KC_VOLD,    _______,     KC_HOME,       KC_PGUP,        KC_PGDN,    KC_END, \
+RGB_HUD,   RGB_HUI,    KC_MPLY,    _______,    KC_MUTE,       _______,     _______,       _______,        _______,   RESET \
+                        _______, LT(3,KC_DEL), LT(1,KC_ENTER),   LT(2,KC_SPACE),   KC_BACKSPACE, _______
+
 #define SCHREIB \
-	_______, QK_BOOT, KC_F1,   KC_F2,   KC_F3,   KC_F10,      _______, KC_WH_U, KC_WH_D, _______, TG(CMK), _______, \
-	_______, _______, KC_F4,   KC_F5,   KC_F6,   KC_F11,      KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, _______, _______, \
-	_______, Z_SLEEP, KC_F7,   KC_F8,   KC_F9,   KC_F12,      _______, KC_BTN2, KC_BTN1, _______, Z_SSAVE, _______, \
-	                           _______, _______, _______,     _______,	 _______, _______
-/* ,-----------------------------------------.                ,-----------------------------------------.
-   |      |BOOT  |  F1  |  F2  |  F3  | F10  |                |      | WH_U | WH_D |      |_COLE |      |
-   |------+------+------+------+------+------|                |------+------+------+------+------+------|
-   |      |      |  F4  |  F5  |  F6  | F11  |                | MS_L | MS_D | MS_U | MS_R |      |      |
-   |------+------+------+------+------+------|                |------+------+------+------+------+------|
-   |      |SLEEP |  F7  |  F8  |  F9  | F12  |                |      | BTN2 | BTN1 |      |SSAVE |      |
-   `------+------+------+------+------+------+------.  ,------+------+------+------+------+------+------'
-                               |      |      |      |  |      |      |      |
-                               `--------------------'  `--------------------'
- */
+RALT(KC_Q), _______, _______, RALT(KC_P), _______,   _______,   _______, RALT(KC_Y), RALT(KC_Y), _______, \
+RALT(KC_Q), _______, RALT(KC_S), _______,    _______,   _______, KC_BTN1,    _______,    _______, RALT(KC_P), \
+_______,    _______, _______, _______,    _______,   _______, KC_BTN2,    _______,    _______,    _______, \
+               TG(4), LT(3,KC_DEL), LT(1,KC_ENTER),   LT(2,KC_SPACE),   KC_BACKSPACE, _______
 
-
-// Layout aliases
-#define LAYOUT_36key_w(...) LAYOUT_split_3x6_3(__VA_ARGS__)
+#define LAYOUT_36key_w(...) LAYOUT(__VA_ARGS__)
