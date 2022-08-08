@@ -10,7 +10,7 @@
         [ "MOVE" ],
         [ "SCHREIB" ]
     ],
-    "layout": "LAYOUT_36key_w",
+    // "layout": "LAYOUT_36key_w",
     "notes": "",
     "version": 1
 }
