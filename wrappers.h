@@ -57,7 +57,7 @@ KC_TILDE,           KC_GRAVE,      KC_LBRC,         KC_LPRN,          KC_LCBR,  
 #define SIGN \
 KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10, \
 RALT(KC_1), RALT(KC_2), RALT(KC_3), RALT(KC_7), RALT(KC_6), KC_DOLLAR, RALT(KC_5), KC_AMPERSAND,  S(KC_BSLS), SAGR(KC_6), \
-RALT(KC_8), SAGR(KC_EQUAL), SAGR(KC_4), SAGR(KC_LBRC), RALT(KC_LBRC), RALT(KC_RBRC), SAGR(KC_RBRC), RALT(KC_MINUS), KC_NDASH, SAGR(KC_BSLS), \
+RALT(KC_8), SAGR(KC_EQUAL), SAGR(KC_4), SAGR(KC_LBRC), RALT(KC_LBRC), RALT(KC_RBRC), SAGR(KC_RBRC), RALT(KC_MINUS), _______, SAGR(KC_BSLS), \
                               _______, LT(3,KC_DEL), LT(1,KC_ENTER),   LT(2,KC_SPACE),   KC_BACKSPACE, _______
 
 #define MOVE \
@@ -68,8 +68,8 @@ RGB_HUD,   RGB_HUI,    KC_MPLY,    _______,    KC_MUTE,       _______,     _____
 
 #define SCHREIB \
 RALT(KC_Q), _______, _______, RALT(KC_P), _______,   _______,   _______, RALT(KC_Y), RALT(KC_Y), _______, \
-RALT(KC_Q), _______, RALT(KC_S), KC_MDASH,    _______,   _______, KC_BTN1,    KC_ETREMA,    _______, RALT(KC_P), \
+RALT(KC_Q), _______, RALT(KC_S), _______,    _______,   _______, KC_BTN1,    _______,    _______, RALT(KC_P), \
 _______,    _______, _______, _______,    _______,   _______, KC_BTN2,    _______,    _______,    _______, \
                TG(4), LT(3,KC_DEL), LT(1,KC_ENTER),   LT(2,KC_SPACE),   KC_BACKSPACE, _______
 
-#define LAYOUT_wrapper_split_3x6_3(...) LAYOUT_split_3x6_3(__VA_ARGS__)
+#define LAYOUT_36key_w(...) LAYOUT(__VA_ARGS__)
