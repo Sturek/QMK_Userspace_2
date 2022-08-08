@@ -1,3 +1,5 @@
+#include QMK_KEYBOARD_H
+
 enum combos {
   QW_ESC,
   QA_TAB,
