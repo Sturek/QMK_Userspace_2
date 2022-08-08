@@ -63,7 +63,7 @@ RALT(KC_8), SAGR(KC_EQUAL), SAGR(KC_4), SAGR(KC_LBRC), RALT(KC_LBRC), RALT(KC_RB
 #define MOVE \
 RGB_TOG,   KC_MPRV,    KC_UP,      KC_MNXT,    KC_VOLU,    RGB_VAD,     RGB_VAI,       _______,        KC_F11,     KC_F12, \
 RGB_MOD,   KC_LEFT,    KC_DOWN,    KC_RIGHT,   KC_VOLD,    _______,     KC_HOME,       KC_PGUP,        KC_PGDN,    KC_END, \
-RGB_HUD,   RGB_HUI,    KC_MPLY,    _______,    KC_MUTE,       _______,     _______,       _______,        _______,   RESET \
+RGB_HUD,   RGB_HUI,    KC_MPLY,    _______,    KC_MUTE,       _______,     _______,       _______,        _______,   RESET, \
                         _______, LT(3,KC_DEL), LT(1,KC_ENTER),   LT(2,KC_SPACE),   KC_BACKSPACE, _______
 
 #define SCHREIB \
