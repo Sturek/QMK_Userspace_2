@@ -13,6 +13,7 @@ jobs:
         - niu_mini.json
         - 4pack.json
         - 3w6.json
+        - ferris.json
 # End of json file list
 
     steps:
