@@ -1,0 +1,16 @@
+{
+    "author": "",
+    "documentation": "Wrapper based keymap",
+    "keyboard": "ferris/sweep",
+    "keymap": "Sturek",
+    "layers": [
+        [ "C_34(WRITE)" ],
+        [ "C_34(COUNT)" ],
+        [ "C_34(SIGN)" ],
+        [ "C_34(MOVE)" ],
+        [ "C_34(SCHREIB)" ]
+    ],
+    "layout": "LAYOUT_34key_w",
+    "notes": "",
+    "version": 1
+}

@@ -29,3 +29,9 @@ ifeq ($(strip $(KEYBOARD)), 3w6/rev2)
     COMBO_ENABLE = yes
     SRC += combos.c
 endif
+
+ifeq ($(strip $(KEYBOARD)), ferris/sweep)
+    MACROS_ENABLED = yes
+    COMBO_ENABLE = yes
+    SRC += combos.c
+endif

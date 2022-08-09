@@ -73,3 +73,16 @@ _______,    _______, _______, _______,    _______,   _______, KC_BTN2,    ______
                TG(4), LT(3,KC_DEL), LT(1,KC_ENTER),   LT(2,KC_SPACE),   KC_BACKSPACE, _______
 
 #define LAYOUT_36key_w(...) LAYOUT(__VA_ARGS__)
+#define LAYOUT_34key_w(...) LAYOUT_split_3x5_2(__VA_ARGS__)
+
+#define C_34(k) SPLIT_42_TO_34(k)
+#define SPLIT_42_TO_34( \
+	     k02, k03, k04, k05, k06,    k07, k08, k09, k10, k11, \
+	     k14, k15, k16, k17, k18,    k19, k20, k21, k22, k23, \
+	     k26, k27, k28, k29, k30,    k31, k32, k33, k34, k35, \
+	               k37, k38, k39,    k40, k41, k42 \
+) \
+	    k02, k03, k04, k05, k06,    k07, k08, k09, k10, k11, \
+	     k14, k15, k16, k17, k18,    k19, k20, k21, k22, k23, \
+	     k26, k27, k28, k29, k30,    k31, k32, k33, k34, k35, \
+	                    k38, k39,    k40, k41
